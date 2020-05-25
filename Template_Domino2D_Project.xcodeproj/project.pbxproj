@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1ABCA3C8247C298700DB2436 /* Domino2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1ABCA3C6247C298700DB2436 /* Domino2D.cpp */; };
 		1AF40AD8247C112A004B2FE0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AF40AD7247C112A004B2FE0 /* main.cpp */; };
 		1AF40AE1247C12AA004B2FE0 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF40AE0247C12AA004B2FE0 /* SDL2.framework */; };
 		1AF40AE5247C169E004B2FE0 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AF40AE3247C169E004B2FE0 /* Game.cpp */; };
@@ -25,6 +26,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1ABCA3C6247C298700DB2436 /* Domino2D.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Domino2D.cpp; sourceTree = "<group>"; };
+		1ABCA3C7247C298700DB2436 /* Domino2D.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Domino2D.h; sourceTree = "<group>"; };
 		1AF40AD4247C112A004B2FE0 /* Template_Domino2D_Project */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Template_Domino2D_Project; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AF40AD7247C112A004B2FE0 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		1AF40AE0247C12AA004B2FE0 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = Domino2D/ThirdParty/SDL2.framework; sourceTree = "<group>"; };
@@ -75,6 +78,8 @@
 			children = (
 				1AF40AE3247C169E004B2FE0 /* Game.cpp */,
 				1AF40AE4247C169E004B2FE0 /* Game.hpp */,
+				1ABCA3C7247C298700DB2436 /* Domino2D.h */,
+				1ABCA3C6247C298700DB2436 /* Domino2D.cpp */,
 			);
 			path = Domino2D;
 			sourceTree = "<group>";
@@ -146,6 +151,7 @@
 			files = (
 				1AF40AD8247C112A004B2FE0 /* main.cpp in Sources */,
 				1AF40AE5247C169E004B2FE0 /* Game.cpp in Sources */,
+				1ABCA3C8247C298700DB2436 /* Domino2D.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
