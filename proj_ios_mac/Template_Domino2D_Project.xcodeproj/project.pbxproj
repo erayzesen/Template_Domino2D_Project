@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A3AAADB247D7DFE00937A51 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A3AAADA247D7DFE00937A51 /* main.cpp */; };
+		1A3AAADC247D7DFE00937A51 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A3AAADA247D7DFE00937A51 /* main.cpp */; };
+		1A4020C7247D6CC6004E02CD /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4020C6247D6CC6004E02CD /* GameController.framework */; };
+		1A4020C9247D6CD5004E02CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4020C8247D6CD5004E02CD /* Foundation.framework */; };
+		1A4020CB247D6CE1004E02CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4020CA247D6CE1004E02CD /* UIKit.framework */; };
+		1A4020CD247D6CED004E02CD /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4020CC247D6CED004E02CD /* OpenGLES.framework */; };
+		1A4020CF247D6CF6004E02CD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4020CE247D6CF6004E02CD /* QuartzCore.framework */; };
+		1A4020D1247D6D00004E02CD /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4020D0247D6CFF004E02CD /* CoreAudio.framework */; };
+		1A4020D3247D6D08004E02CD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4020D2247D6D08004E02CD /* AudioToolbox.framework */; };
+		1A4020D5247D6D10004E02CD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4020D4247D6D10004E02CD /* CoreGraphics.framework */; };
+		1A4020D7247D6D18004E02CD /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4020D6247D6D18004E02CD /* CoreMotion.framework */; };
+		1A4020D9247D6D21004E02CD /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4020D8247D6D21004E02CD /* Metal.framework */; };
+		1A4020DB247D6D29004E02CD /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4020DA247D6D29004E02CD /* CoreBluetooth.framework */; };
+		1A4020DD247D6D31004E02CD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4020DC247D6D31004E02CD /* AVFoundation.framework */; };
+		1A4020E1247D6DEA004E02CD /* libSDL2Sim.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4020DF247D6DEA004E02CD /* libSDL2Sim.a */; };
+		1A403686247D7132004E02CD /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A403682247D6FBC004E02CD /* SDL2.framework */; };
+		1A403687247D7132004E02CD /* SDL2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1A403682247D6FBC004E02CD /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1A96693A247D7BE000D1F837 /* Sprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A966935247D7BE000D1F837 /* Sprite.cpp */; };
+		1A96693B247D7BE000D1F837 /* Sprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A966935247D7BE000D1F837 /* Sprite.cpp */; };
+		1A96693C247D7BE000D1F837 /* Domino2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A966938247D7BE000D1F837 /* Domino2D.cpp */; };
+		1A96693D247D7BE000D1F837 /* Domino2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A966938247D7BE000D1F837 /* Domino2D.cpp */; };
+		1A96693E247D7BE000D1F837 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A966939247D7BE000D1F837 /* Game.cpp */; };
+		1A96693F247D7BE000D1F837 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A966939247D7BE000D1F837 /* Game.cpp */; };
+		1A966941247D7C6400D1F837 /* SDL2_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A966940247D7C6400D1F837 /* SDL2_image.framework */; };
+		1A966942247D7C6400D1F837 /* SDL2_image.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1A966940247D7C6400D1F837 /* SDL2_image.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1A966945247D7CA700D1F837 /* supermario.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A966944247D7CA700D1F837 /* supermario.png */; };
+		1A966946247D7CA700D1F837 /* supermario.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A966944247D7CA700D1F837 /* supermario.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1A403688247D7132004E02CD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1A403687247D7132004E02CD /* SDL2.framework in Embed Frameworks */,
+				1A966942247D7C6400D1F837 /* SDL2_image.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1A3AAADA247D7DFE00937A51 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		1A4020C6247D6CC6004E02CD /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/GameController.framework; sourceTree = DEVELOPER_DIR; };
+		1A4020C8247D6CD5004E02CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		1A4020CA247D6CE1004E02CD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		1A4020CC247D6CED004E02CD /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/OpenGLES.framework; sourceTree = DEVELOPER_DIR; };
+		1A4020CE247D6CF6004E02CD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		1A4020D0247D6CFF004E02CD /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/CoreAudio.framework; sourceTree = DEVELOPER_DIR; };
+		1A4020D2247D6D08004E02CD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
+		1A4020D4247D6D10004E02CD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		1A4020D6247D6D18004E02CD /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
+		1A4020D8247D6D21004E02CD /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/Metal.framework; sourceTree = DEVELOPER_DIR; };
+		1A4020DA247D6D29004E02CD /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/CoreBluetooth.framework; sourceTree = DEVELOPER_DIR; };
+		1A4020DC247D6D31004E02CD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		1A4020DE247D6DEA004E02CD /* libSDL2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDL2.a; path = ../Domino2D/ThirdParty/SDL/libSDL2.a; sourceTree = "<group>"; };
+		1A4020DF247D6DEA004E02CD /* libSDL2Sim.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDL2Sim.a; path = ../Domino2D/ThirdParty/SDL/libSDL2Sim.a; sourceTree = "<group>"; };
+		1A403682247D6FBC004E02CD /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../Domino2D/ThirdParty/SDL/SDL2.framework; sourceTree = "<group>"; };
+		1A966934247D7BE000D1F837 /* Sprite.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Sprite.hpp; sourceTree = "<group>"; };
+		1A966935247D7BE000D1F837 /* Sprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Sprite.cpp; sourceTree = "<group>"; };
+		1A966936247D7BE000D1F837 /* Domino2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Domino2D.h; sourceTree = "<group>"; };
+		1A966937247D7BE000D1F837 /* Game.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Game.hpp; sourceTree = "<group>"; };
+		1A966938247D7BE000D1F837 /* Domino2D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Domino2D.cpp; sourceTree = "<group>"; };
+		1A966939247D7BE000D1F837 /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		1A966940247D7C6400D1F837 /* SDL2_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_image.framework; path = ../Domino2D/ThirdParty/SDL/SDL2_image.framework; sourceTree = "<group>"; };
+		1A966944247D7CA700D1F837 /* supermario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = supermario.png; sourceTree = "<group>"; };
+		1AC1517E247D651300105CAA /* Template_Domino2D_Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Template_Domino2D_Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AC1518D247D651300105CAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AC15194247D651300105CAA /* Template_Domino2D_Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Template_Domino2D_Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AC1519F247D651300105CAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1AC1517B247D651300105CAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A4020E1247D6DEA004E02CD /* libSDL2Sim.a in Frameworks */,
+				1A4020DD247D6D31004E02CD /* AVFoundation.framework in Frameworks */,
+				1A4020DB247D6D29004E02CD /* CoreBluetooth.framework in Frameworks */,
+				1A4020D9247D6D21004E02CD /* Metal.framework in Frameworks */,
+				1A4020D7247D6D18004E02CD /* CoreMotion.framework in Frameworks */,
+				1A4020D5247D6D10004E02CD /* CoreGraphics.framework in Frameworks */,
+				1A4020D3247D6D08004E02CD /* AudioToolbox.framework in Frameworks */,
+				1A4020D1247D6D00004E02CD /* CoreAudio.framework in Frameworks */,
+				1A4020CF247D6CF6004E02CD /* QuartzCore.framework in Frameworks */,
+				1A4020CD247D6CED004E02CD /* OpenGLES.framework in Frameworks */,
+				1A4020CB247D6CE1004E02CD /* UIKit.framework in Frameworks */,
+				1A4020C9247D6CD5004E02CD /* Foundation.framework in Frameworks */,
+				1A4020C7247D6CC6004E02CD /* GameController.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AC15191247D651300105CAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A403686247D7132004E02CD /* SDL2.framework in Frameworks */,
+				1A966941247D7C6400D1F837 /* SDL2_image.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A3AAAD6247D7DBC00937A51 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1A3AAADA247D7DFE00937A51 /* main.cpp */,
+			);
+			name = Classes;
+			path = ../Classes;
+			sourceTree = "<group>";
+		};
+		1A4020C1247D6CAE004E02CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A966940247D7C6400D1F837 /* SDL2_image.framework */,
+				1A403682247D6FBC004E02CD /* SDL2.framework */,
+				1A4020DE247D6DEA004E02CD /* libSDL2.a */,
+				1A4020DF247D6DEA004E02CD /* libSDL2Sim.a */,
+				1A4020DC247D6D31004E02CD /* AVFoundation.framework */,
+				1A4020DA247D6D29004E02CD /* CoreBluetooth.framework */,
+				1A4020D8247D6D21004E02CD /* Metal.framework */,
+				1A4020D6247D6D18004E02CD /* CoreMotion.framework */,
+				1A4020D4247D6D10004E02CD /* CoreGraphics.framework */,
+				1A4020D2247D6D08004E02CD /* AudioToolbox.framework */,
+				1A4020D0247D6CFF004E02CD /* CoreAudio.framework */,
+				1A4020CE247D6CF6004E02CD /* QuartzCore.framework */,
+				1A4020CC247D6CED004E02CD /* OpenGLES.framework */,
+				1A4020CA247D6CE1004E02CD /* UIKit.framework */,
+				1A4020C8247D6CD5004E02CD /* Foundation.framework */,
+				1A4020C6247D6CC6004E02CD /* GameController.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A4020E2247D6EFC004E02CD /* Domino2D */ = {
+			isa = PBXGroup;
+			children = (
+				1A966938247D7BE000D1F837 /* Domino2D.cpp */,
+				1A966936247D7BE000D1F837 /* Domino2D.h */,
+				1A966939247D7BE000D1F837 /* Game.cpp */,
+				1A966937247D7BE000D1F837 /* Game.hpp */,
+				1A966935247D7BE000D1F837 /* Sprite.cpp */,
+				1A966934247D7BE000D1F837 /* Sprite.hpp */,
+			);
+			name = Domino2D;
+			path = ../Domino2D;
+			sourceTree = "<group>";
+		};
+		1A966943247D7CA700D1F837 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1A966944247D7CA700D1F837 /* supermario.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1AC15170247D64F700105CAA = {
+			isa = PBXGroup;
+			children = (
+				1A3AAAD6247D7DBC00937A51 /* Classes */,
+				1A966943247D7CA700D1F837 /* Resources */,
+				1A4020E2247D6EFC004E02CD /* Domino2D */,
+				1AC15180247D651300105CAA /* app_iOS */,
+				1AC15195247D651300105CAA /* app_macOS */,
+				1AC1517F247D651300105CAA /* Products */,
+				1A4020C1247D6CAE004E02CD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1AC1517F247D651300105CAA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AC1517E247D651300105CAA /* Template_Domino2D_Project.app */,
+				1AC15194247D651300105CAA /* Template_Domino2D_Project.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1AC15180247D651300105CAA /* app_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				1AC1518D247D651300105CAA /* Info.plist */,
+			);
+			path = app_iOS;
+			sourceTree = "<group>";
+		};
+		1AC15195247D651300105CAA /* app_macOS */ = {
+			isa = PBXGroup;
+			children = (
+				1AC1519F247D651300105CAA /* Info.plist */,
+			);
+			path = app_macOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1AC1517D247D651300105CAA /* Template_Domino2D_Project iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AC151AA247D651300105CAA /* Build configuration list for PBXNativeTarget "Template_Domino2D_Project iOS" */;
+			buildPhases = (
+				1AC1517A247D651300105CAA /* Sources */,
+				1AC1517B247D651300105CAA /* Frameworks */,
+				1AC1517C247D651300105CAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Template_Domino2D_Project iOS";
+			productName = "testSDLApp iOS";
+			productReference = 1AC1517E247D651300105CAA /* Template_Domino2D_Project.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1AC15193247D651300105CAA /* Template_Domino2D_Project macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AC151AD247D651300105CAA /* Build configuration list for PBXNativeTarget "Template_Domino2D_Project macOS" */;
+			buildPhases = (
+				1AC15190247D651300105CAA /* Sources */,
+				1AC15191247D651300105CAA /* Frameworks */,
+				1AC15192247D651300105CAA /* Resources */,
+				1A403688247D7132004E02CD /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Template_Domino2D_Project macOS";
+			productName = "testSDLApp macOS";
+			productReference = 1AC15194247D651300105CAA /* Template_Domino2D_Project.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1AC15171247D64F700105CAA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Eray Zesen";
+				TargetAttributes = {
+					1AC1517D247D651300105CAA = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					1AC15193247D651300105CAA = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 1AC15174247D64F700105CAA /* Build configuration list for PBXProject "Template_Domino2D_Project" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1AC15170247D64F700105CAA;
+			productRefGroup = 1AC1517F247D651300105CAA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1AC1517D247D651300105CAA /* Template_Domino2D_Project iOS */,
+				1AC15193247D651300105CAA /* Template_Domino2D_Project macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1AC1517C247D651300105CAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A966945247D7CA700D1F837 /* supermario.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AC15192247D651300105CAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A966946247D7CA700D1F837 /* supermario.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1AC1517A247D651300105CAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A96693A247D7BE000D1F837 /* Sprite.cpp in Sources */,
+				1A96693C247D7BE000D1F837 /* Domino2D.cpp in Sources */,
+				1A3AAADB247D7DFE00937A51 /* main.cpp in Sources */,
+				1A96693E247D7BE000D1F837 /* Game.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AC15190247D651300105CAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A96693B247D7BE000D1F837 /* Sprite.cpp in Sources */,
+				1A96693D247D7BE000D1F837 /* Domino2D.cpp in Sources */,
+				1A3AAADC247D7DFE00937A51 /* main.cpp in Sources */,
+				1A96693F247D7BE000D1F837 /* Game.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1AC151A8247D651300105CAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		1AC151A9247D651300105CAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+			};
+			name = Release;
+		};
+		1AC151AB247D651300105CAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../Domino2D/ThirdParty/SDL/";
+				INFOPLIST_FILE = app_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					../Domino2D/ThirdParty/SDL/Include,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.erayzesen.Template-Domino2D-Project";
+				PRODUCT_NAME = Template_Domino2D_Project;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1AC151AC247D651300105CAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../Domino2D/ThirdParty/SDL/";
+				INFOPLIST_FILE = app_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					../Domino2D/ThirdParty/SDL/Include,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.erayzesen.Template-Domino2D-Project";
+				PRODUCT_NAME = Template_Domino2D_Project;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1AC151AE247D651300105CAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../Domino2D/ThirdParty/SDL/",
+				);
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = app_macOs/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.erayzesen.Template-Domino2D-Project";
+				PRODUCT_NAME = Template_Domino2D_Project;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1AC151AF247D651300105CAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../Domino2D/ThirdParty/SDL/",
+				);
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = app_macOs/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.erayzesen.Template-Domino2D-Project";
+				PRODUCT_NAME = Template_Domino2D_Project;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1AC15174247D64F700105CAA /* Build configuration list for PBXProject "Template_Domino2D_Project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AC151A8247D651300105CAA /* Debug */,
+				1AC151A9247D651300105CAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AC151AA247D651300105CAA /* Build configuration list for PBXNativeTarget "Template_Domino2D_Project iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AC151AB247D651300105CAA /* Debug */,
+				1AC151AC247D651300105CAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AC151AD247D651300105CAA /* Build configuration list for PBXNativeTarget "Template_Domino2D_Project macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AC151AE247D651300105CAA /* Debug */,
+				1AC151AF247D651300105CAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1AC15171247D64F700105CAA /* Project object */;
+}
