@@ -32,8 +32,20 @@
 		1A96693F247D7BE000D1F837 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A966939247D7BE000D1F837 /* Game.cpp */; };
 		1A966941247D7C6400D1F837 /* SDL2_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A966940247D7C6400D1F837 /* SDL2_image.framework */; };
 		1A966942247D7C6400D1F837 /* SDL2_image.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1A966940247D7C6400D1F837 /* SDL2_image.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		1A966945247D7CA700D1F837 /* supermario.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A966944247D7CA700D1F837 /* supermario.png */; };
-		1A966946247D7CA700D1F837 /* supermario.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A966944247D7CA700D1F837 /* supermario.png */; };
+		1AD6EC6D247DBF0C00797B3F /* Renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AD6EC6B247DBF0C00797B3F /* Renderer.cpp */; };
+		1AD6EC6E247DBF0C00797B3F /* Renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AD6EC6B247DBF0C00797B3F /* Renderer.cpp */; };
+		1AD6EC71247DC1DE00797B3F /* Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AD6EC6F247DC1DE00797B3F /* Node.cpp */; };
+		1AD6EC72247DC1DE00797B3F /* Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AD6EC6F247DC1DE00797B3F /* Node.cpp */; };
+		1AD6EC75247DC3EC00797B3F /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AD6EC73247DC3EC00797B3F /* Scene.cpp */; };
+		1AD6EC76247DC3EC00797B3F /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AD6EC73247DC3EC00797B3F /* Scene.cpp */; };
+		1AF233F5247DDD0A004E949B /* SampleScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AF233F3247DDD0A004E949B /* SampleScene.cpp */; };
+		1AF233F6247DDDA5004E949B /* SampleScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AF233F3247DDD0A004E949B /* SampleScene.cpp */; };
+		1AF233F9247E1FE5004E949B /* EventHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AF233F7247E1FE5004E949B /* EventHandler.cpp */; };
+		1AF233FA247E2511004E949B /* EventHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AF233F7247E1FE5004E949B /* EventHandler.cpp */; };
+		1AF233FE247EBE1F004E949B /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AF233FC247EBE1F004E949B /* Timer.cpp */; };
+		1AF233FF247EBE1F004E949B /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AF233FC247EBE1F004E949B /* Timer.cpp */; };
+		1AF23404247F0B62004E949B /* Resources in Resources */ = {isa = PBXBuildFile; fileRef = 1AF23403247F0B62004E949B /* Resources */; };
+		1AF23405247F0B62004E949B /* Resources in Resources */ = {isa = PBXBuildFile; fileRef = 1AF23403247F0B62004E949B /* Resources */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -75,11 +87,23 @@
 		1A966938247D7BE000D1F837 /* Domino2D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Domino2D.cpp; sourceTree = "<group>"; };
 		1A966939247D7BE000D1F837 /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
 		1A966940247D7C6400D1F837 /* SDL2_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_image.framework; path = ../Domino2D/ThirdParty/SDL/SDL2_image.framework; sourceTree = "<group>"; };
-		1A966944247D7CA700D1F837 /* supermario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = supermario.png; sourceTree = "<group>"; };
 		1AC1517E247D651300105CAA /* Template_Domino2D_Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Template_Domino2D_Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AC1518D247D651300105CAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AC15194247D651300105CAA /* Template_Domino2D_Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Template_Domino2D_Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AC1519F247D651300105CAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AD6EC6B247DBF0C00797B3F /* Renderer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Renderer.cpp; sourceTree = "<group>"; };
+		1AD6EC6C247DBF0C00797B3F /* Renderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Renderer.hpp; sourceTree = "<group>"; };
+		1AD6EC6F247DC1DE00797B3F /* Node.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Node.cpp; sourceTree = "<group>"; };
+		1AD6EC70247DC1DE00797B3F /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
+		1AD6EC73247DC3EC00797B3F /* Scene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Scene.cpp; sourceTree = "<group>"; };
+		1AD6EC74247DC3EC00797B3F /* Scene.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Scene.hpp; sourceTree = "<group>"; };
+		1AF233F3247DDD0A004E949B /* SampleScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SampleScene.cpp; sourceTree = "<group>"; };
+		1AF233F4247DDD0A004E949B /* SampleScene.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SampleScene.hpp; sourceTree = "<group>"; };
+		1AF233F7247E1FE5004E949B /* EventHandler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EventHandler.cpp; sourceTree = "<group>"; };
+		1AF233F8247E1FE5004E949B /* EventHandler.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = EventHandler.hpp; sourceTree = "<group>"; };
+		1AF233FC247EBE1F004E949B /* Timer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
+		1AF233FD247EBE1F004E949B /* Timer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Timer.hpp; sourceTree = "<group>"; };
+		1AF23403247F0B62004E949B /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +143,8 @@
 			isa = PBXGroup;
 			children = (
 				1A3AAADA247D7DFE00937A51 /* main.cpp */,
+				1AF233F3247DDD0A004E949B /* SampleScene.cpp */,
+				1AF233F4247DDD0A004E949B /* SampleScene.hpp */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -156,24 +182,26 @@
 				1A966937247D7BE000D1F837 /* Game.hpp */,
 				1A966935247D7BE000D1F837 /* Sprite.cpp */,
 				1A966934247D7BE000D1F837 /* Sprite.hpp */,
+				1AD6EC6B247DBF0C00797B3F /* Renderer.cpp */,
+				1AD6EC6C247DBF0C00797B3F /* Renderer.hpp */,
+				1AD6EC6F247DC1DE00797B3F /* Node.cpp */,
+				1AD6EC70247DC1DE00797B3F /* Node.hpp */,
+				1AD6EC73247DC3EC00797B3F /* Scene.cpp */,
+				1AD6EC74247DC3EC00797B3F /* Scene.hpp */,
+				1AF233F7247E1FE5004E949B /* EventHandler.cpp */,
+				1AF233F8247E1FE5004E949B /* EventHandler.hpp */,
+				1AF233FC247EBE1F004E949B /* Timer.cpp */,
+				1AF233FD247EBE1F004E949B /* Timer.hpp */,
 			);
 			name = Domino2D;
 			path = ../Domino2D;
-			sourceTree = "<group>";
-		};
-		1A966943247D7CA700D1F837 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				1A966944247D7CA700D1F837 /* supermario.png */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		1AC15170247D64F700105CAA = {
 			isa = PBXGroup;
 			children = (
 				1A3AAAD6247D7DBC00937A51 /* Classes */,
-				1A966943247D7CA700D1F837 /* Resources */,
+				1AF23403247F0B62004E949B /* Resources */,
 				1A4020E2247D6EFC004E02CD /* Domino2D */,
 				1AC15180247D651300105CAA /* app_iOS */,
 				1AC15195247D651300105CAA /* app_macOS */,
@@ -286,7 +314,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A966945247D7CA700D1F837 /* supermario.png in Resources */,
+				1AF23404247F0B62004E949B /* Resources in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +322,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A966946247D7CA700D1F837 /* supermario.png in Resources */,
+				1AF23405247F0B62004E949B /* Resources in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,8 +333,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AF233F5247DDD0A004E949B /* SampleScene.cpp in Sources */,
 				1A96693A247D7BE000D1F837 /* Sprite.cpp in Sources */,
+				1AD6EC75247DC3EC00797B3F /* Scene.cpp in Sources */,
+				1AF233FE247EBE1F004E949B /* Timer.cpp in Sources */,
+				1AD6EC6D247DBF0C00797B3F /* Renderer.cpp in Sources */,
 				1A96693C247D7BE000D1F837 /* Domino2D.cpp in Sources */,
+				1AF233F9247E1FE5004E949B /* EventHandler.cpp in Sources */,
+				1AD6EC71247DC1DE00797B3F /* Node.cpp in Sources */,
 				1A3AAADB247D7DFE00937A51 /* main.cpp in Sources */,
 				1A96693E247D7BE000D1F837 /* Game.cpp in Sources */,
 			);
@@ -316,8 +350,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AF233F6247DDDA5004E949B /* SampleScene.cpp in Sources */,
 				1A96693B247D7BE000D1F837 /* Sprite.cpp in Sources */,
+				1AD6EC76247DC3EC00797B3F /* Scene.cpp in Sources */,
+				1AF233FF247EBE1F004E949B /* Timer.cpp in Sources */,
+				1AD6EC6E247DBF0C00797B3F /* Renderer.cpp in Sources */,
 				1A96693D247D7BE000D1F837 /* Domino2D.cpp in Sources */,
+				1AF233FA247E2511004E949B /* EventHandler.cpp in Sources */,
+				1AD6EC72247DC1DE00797B3F /* Node.cpp in Sources */,
 				1A3AAADC247D7DFE00937A51 /* main.cpp in Sources */,
 				1A96693F247D7BE000D1F837 /* Game.cpp in Sources */,
 			);
