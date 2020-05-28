@@ -12,7 +12,7 @@ SampleScene::SampleScene(){
     //Writing game codes
     //Option 1
     Sprite::create("spr_mario","Resources/supermario.png")->setParent(this)->setPos(100, 60);
-    Sprite::create("spr_enemy", "Resources/enemy.png")->setParent(this);
+    Sprite::create("spr_enemy", "Resources/enemy.png")->setParent(getChild("spr_mario"))->setPos(100, 200);
     //Option 2
     /*
     Sprite* enemy=Sprite::create("spr_enemy","Resources/enemy.png");
@@ -26,10 +26,6 @@ void SampleScene::onUpdate(){
         int posx=mario->getPosX();
         mario->setPosX(posx+1);
     }
-    Node * enemy=this->getChild("spr_enemy");
-    if(enemy){
-        int posx=enemy->getPosY();
-        enemy->setPosY(posx+1);
-    }
+    
     
 }
